@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Train Scheduler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+    <!-- Moment js -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center">Train Scheduler</h1>
+            <br>
+            <h3 class="text-center"></h3>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <div class="h1">Trains</div>
+                        </tr>
+                        <tr>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">First Train</th>
+                            <th scope="col">Frueqency</th>
+                            <th scope="col">Next Train</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label>Train</label>
+                            <input type="Employee Name" class="form-control" id="train-name">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label>Destination</label>
+                            <input type="text" class="form-control" id="destination">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label class="col-2 col-form-label">First Train HH:MM</label>
+                            <input class="form-control" id="first-train">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label>Frueqency</label>
+                            <input type="text" class="form-control" id="frequency">
+                        </div>
+                    </div>
+                    <!-- <div class="form-row">
+                            <div class="form-group col-md-12">
+                            <label>Next Train</label>
+                            <input type="text" class="form-control" id="next-train">
+                            </div>
+                        </div> -->
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- logic.js -->
+    <script src="assets/javascript/logic.js"></script>
+
+
+
+</body>
+
+</html>
